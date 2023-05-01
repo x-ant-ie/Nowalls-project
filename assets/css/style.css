@@ -73,28 +73,6 @@ body {
   color: black;
 }
 
-#banner h1, #banner h2, #banner .text-div {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
 #banner h1 {
   font-size: 90px;
 }
@@ -135,6 +113,30 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 10px 200px;
+}
+@media (min-width: 576px) {
+  #banner h1, #banner h2, #banner .text-div {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
 }
 
 #about {
@@ -367,6 +369,8 @@ footer .footer-logo {
   }
   #about .about-content {
     flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
   }
   #banner .banner-gallery {
     flex-wrap: wrap;
@@ -459,9 +463,6 @@ footer .footer-logo {
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
-  body {
-    background-color: red;
-  }
   .navbar .nav-links a {
     display: none;
   }

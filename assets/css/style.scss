@@ -94,27 +94,7 @@ body{ font-family: 'balooregular';}
 }
 
 #banner{
-     h1,h2,.text-div{ 
-        overflow: hidden; 
-        white-space: nowrap; 
-        margin: 0 auto;
-       
-        animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite; 
-            
-    }
-
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100%}
-        
-    }
- 
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: white; }
-    }
+  
 
     h1{font-size: 90px;}
 
@@ -161,6 +141,31 @@ body{ font-family: 'balooregular';}
         gap: 10px;
         padding: 10px 200px;
     }
+
+    @media (min-width: 576px) { 
+           
+        h1,h2,.text-div{ 
+            overflow: hidden; 
+            white-space: nowrap; 
+            margin: 0 auto;
+        
+            animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite; 
+                
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100%}
+            
+        }
+    
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+    }  
 }
 
 #about{
@@ -443,7 +448,7 @@ footer{
 
     }
 
-    #about .about-content{flex-direction: column-reverse;}
+    #about .about-content{flex-direction: column-reverse; align-items:center;  gap: 50px;}
 
     #banner .banner-gallery{
         flex-wrap: wrap;
@@ -550,9 +555,7 @@ footer{
  /* X-Small devices (portrait phones, less than 576px) */
 
  @media (max-width: 575px) { 
-    
-    body{background-color: red;}
-  
+
     .navbar {
         .nav-links a{display: none;}
         
