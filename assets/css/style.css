@@ -463,6 +463,9 @@ footer .footer-logo {
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
+  h2 {
+    font-size: 30px;
+  }
   .navbar .nav-links a {
     display: none;
   }
