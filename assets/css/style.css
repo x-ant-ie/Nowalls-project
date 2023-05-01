@@ -306,11 +306,18 @@ body {
   display: flex;
   gap: 100px;
   list-style: none;
+  padding-left: 0px;
   margin-top: 20px;
+}
+#company-address ul img {
+  height: 40px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #company-address ul li {
   font-size: 20px;
-  width: 15%;
+  width: 18%;
 }
 
 footer {

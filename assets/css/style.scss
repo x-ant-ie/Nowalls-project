@@ -367,11 +367,18 @@ body{ font-family: 'balooregular';}
         display: flex;
         gap: 100px;
         list-style: none;
+        padding-left: 0px;
         margin-top: 20px;
+
+        img{
+            height: 40px;
+            width: 50px;
+            object-fit: contain;
+        }
 
         li{
             font-size: 20px;
-            width: 15%;
+            width: 18%;
         }
     }
 }
