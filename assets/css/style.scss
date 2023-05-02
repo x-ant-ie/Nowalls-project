@@ -42,7 +42,8 @@ body{ font-family: 'balooregular';}
     .openbtn{ 
         display: none;
         position: relative;
-        top: -20px;
+        top: -10px;
+        color: rgb(216, 123, 65);
     }
 
 
@@ -85,7 +86,7 @@ body{ font-family: 'balooregular';}
     .overlay .closebtn {
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 10px;
         font-size: 60px;
         color: black;
     }
@@ -306,6 +307,8 @@ body{ font-family: 'balooregular';}
     h2, p{ 
         margin-bottom: 2px;
      }
+
+     h2{ color: rgb(216, 123, 65);}
 
 
     .div1{
@@ -563,10 +566,12 @@ footer{
 
  @media (max-width: 575px) { 
 
-    h2{font-size: 30px;}
+    h2{text-align: center;}
 
     .navbar {
         .nav-links a{display: none;}
+
+        img{width: 50%;}
         
         .openbtn{
             display: block;
@@ -575,10 +580,11 @@ footer{
     }
 
     #banner{
-        
+        text-align: center;
         h1{font-size: 40px;}
-        h2{font-size: 20px;}
+        h2{font-size: 30px;}
         .div2{display: none;}
+        .text-div{ justify-content: center;margin-bottom: 0px; }
      
         .banner-gallery{
             overflow-x: scroll;
@@ -599,20 +605,23 @@ footer{
     #about{
         padding: 50px 0px;
 
-        .about-content{flex-direction: column-reverse;}
-        img{width: 100%;}
+        .about-content{flex-direction: column-reverse;text-align: center; gap: 20px;}
+        img{width: 50%;}
         h2{width: 100%;}
 
     }
 
 
     #subscribe .subscribe-content{
+        text-align: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+        
         img{
             width:100%;
-            margin-left: 0px;}
-            align-items: center;
-            flex-direction: column-reverse;
-
+            margin-left: 0px;
+        }
+            
     }
 
     #services .services-cards .mySlides {
@@ -633,18 +642,21 @@ footer{
 
     #company-address {
         background: url(/assets/images/bgtop.png);
-        background-repeat: no-repeat;
-         height: 100vh;
-        justify-content: space-between;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
 
         ul{
            flex-direction: column;
-           gap: 20px;
-           margin-bottom: 200px;
+           gap: 40px;
+           justify-content: center;
+           align-items: center;
+           margin-bottom: 300px;
         } 
 
        ul li{
-           width: 100%;
+           width: 70%;
        }
    }
    
