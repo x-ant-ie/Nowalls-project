@@ -509,6 +509,7 @@ footer .footer-logo {
     flex-direction: column;
     flex-wrap: wrap;
     height: 60vh;
+    margin-top: 0px;
   }
   #banner .banner-gallery img:nth-child(3) {
     display: none;

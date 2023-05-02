@@ -1,10 +1,10 @@
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
     
-     $('#banner img').fadeOut(1000).delay(1000).slideUp(1000).fadeIn(1000);
+//      $('#banner img').fadeOut(1000).delay(1000).slideUp(1000).fadeIn(1000);
 
-}); 
+// }); 
 
 
       /*  MENU */
